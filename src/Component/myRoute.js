@@ -5,6 +5,7 @@ import Page1 from "./Pages/Page1";
 import Page2 from "./Pages/Page2";
 import Page3 from "./Pages/Page3";
 import NotFound from "./Pages/NotFound";
+import Login from "./Pages/Login";
 
 class MyRoute extends Component {
 
@@ -18,7 +19,8 @@ class MyRoute extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/page1" component={Page1}/>
                     <Route exact path="/page2" component={Page2}/>
-                    <Route exact path="/page3/:username" component={Page3}/>
+                    <Route exact path="/login" component={Login}/>
+                    <Route exact path="/page3/" component={Page3}/>
 
                     <Route component={NotFound}/>
 
