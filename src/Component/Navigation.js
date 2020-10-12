@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 class Navigation extends Component {
     render() {
@@ -10,10 +10,10 @@ class Navigation extends Component {
 
                     <li>
 
-                        <Link to="/">Home</Link>
-                        <Link to="/page1">Page 1</Link>
-                        <Link to="/page2">Page 2</Link>
-                        <Link to="/page3">Page 3</Link>
+                        <NavLink exact activeStyle={{color:"green"}} to="/">Home</NavLink>
+                        <NavLink exact activeStyle={{color:"green"}} to="/page1">Page 1</NavLink>
+                        <NavLink exact activeStyle={{color:"green"}} to="/page2">Page 2</NavLink>
+                        <NavLink exact activeStyle={{color:"green"}} to="/page3">Page 3</NavLink>
 
                     </li>
 
