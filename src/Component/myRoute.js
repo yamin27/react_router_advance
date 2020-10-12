@@ -7,7 +7,10 @@ import Page3 from "./Pages/Page3";
 import NotFound from "./Pages/NotFound";
 
 class MyRoute extends Component {
+
+
     render() {
+
         return (
             <div>
 
@@ -15,7 +18,7 @@ class MyRoute extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/page1" component={Page1}/>
                     <Route exact path="/page2" component={Page2}/>
-                    <Route exact path="/page3" component={Page3}/>
+                    <Route exact path="/page3/:username" component={Page3}/>
 
                     <Route component={NotFound}/>
 
